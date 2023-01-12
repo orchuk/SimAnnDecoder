@@ -7,4 +7,6 @@ if __name__ == "__main__":
     with open("problemset_07_encrypted_input.txt") as enc:
         msg    = enc.read()
         result = sa.run(msg, lm)
-        print(result.cypher, result.translate(msg), result.get_energy(msg, lm))
+        print(result.cypher)
+        print(sa.temp, sa.thresh, sa.rate)
+        print(result.translate(msg))
