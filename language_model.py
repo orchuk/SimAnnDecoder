@@ -27,8 +27,6 @@ class CorpusReader:
 
             self.unigram_count = {char: 0 for char in self.VALID}
 
-            print(self.unigram_count.keys())
-
             for char in self.corpus:
                 self.unigram_count[char] = self.unigram_count[char] + 1
 
